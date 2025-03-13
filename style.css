@@ -411,7 +411,8 @@ h1 {
 }
 
 .skillset-bullets .skill:hover {
-  background-color: #f0a0c2;  /* Add a hover effect */
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
 }
 
 .software-skills {
@@ -431,8 +432,10 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
+
 .software-skills .skill:hover {
-  background-color: #f0a0c2;  /* Add a hover effect */
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
 }
 
 .courses {
@@ -453,7 +456,8 @@ h1 {
 }
 
 .courses .skill:hover {
-  background-color: #f0a0c2;  /* Add a hover effect */
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
 }
 
 .text-blocks {
