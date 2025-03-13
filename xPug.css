@@ -1,0 +1,168 @@
+/* xpug.css */
+
+/* General Styles for xPug Page */
+body {
+  background-color: #222;
+  color: #ddd;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered Video on xPug Page */
+.centered-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.centered-video iframe {
+  width: 100%;
+  max-width: 700px; /* Adjust size to make it fit better */
+  height: 400px; /* Adjust height to fit better */
+  border: none;
+}
+
+/* Gallery Section */
+.gallery {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure images stay within their container */
+  border: 2px solid #555; /* Add the grey wireframe (border) like the index page */
+  cursor: pointer;
+}
+
+.gallery-item a {
+  display: block; /* Make sure the anchor tag takes up the entire area of the gallery item */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10; /* Ensure the anchor tag is on top of the image */
+}
+
+/* Add overlay effect on hover to the anchor */
+.gallery-item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); /* Transparent white overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Make sure overlay is below the link text but above the image */
+}
+
+/* Grid layout for the gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for gallery */
+  gap: 20px; /* Space between the images */
+}
+
+.gallery-item img {
+  width: 100%; /* Ensure images fit within their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Make sure images don't stretch and maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Gallery Item */
+.gallery-item:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.gallery-item a:hover::after {
+  opacity: 1; /* Show overlay when hovering on the anchor */
+}
+
+.gallery-item a:hover {
+  text-decoration: none; /* Remove underline when hovered */
+}
+
+
+/* General container styles for video, paragraph, and gallery */
+.content-container {
+  background-color: #333; /* Dark grey background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 0px;
+  max-width: 800px;
+  margin: 20px auto; /* Center the container */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.centered-paragraph p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Full-screen modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}

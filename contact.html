@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="navbar-container">
+    <!-- My Name -->
+    <div class="navbar-name">Bradley Kangas</div>
+
+    <!-- Logo spot -->
+    <div class="navbar-logo">
+      <!-- Logo image, replace with your logo -->
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+  
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="xPug.html">Games</a>
+        <ul>
+          <li><a href="xPug.html">xPug (Mobile)</a></li>
+          <li><a href="Esotaria.html">Esotaria (PC)</a></li>
+          <li><a href="GunTech.html">Gun Tech (VR)</a></li>
+          <li><a href="BeforeWeWake.html">Before We Wake (PC)</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="AppleLab.html">3D</a>
+        <ul>
+          <li><a href="AppleLab.html">Apple Lab (2020)</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li> <!-- Make sure this link is active on the contact page -->
+    </ul>
+
+    <!-- Animated typing text -->
+    <div class="typing-container">
+      <span id="typing-text"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Page Section -->
+<section class="contact-section">
+  <div class="content-container">
+    <h1 class="title">Contact Information</h1>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" value="Bradley Kangas" disabled>
+      </div>
+
+      <div class="contact-item">
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="brad.kangas@yahoo.com" disabled>
+      </div>
+
+      <div class="contact-item">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" value="(910) 269-3748" disabled>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

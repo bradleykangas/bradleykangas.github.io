@@ -1,0 +1,155 @@
+/* Contact Page Styles */
+.contact-section {
+  background-color: #222;
+  color: #ddd;
+  padding: 20px 20px 40px 20px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top instead of center */
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling within this section */
+}
+
+/* General Content Container */
+.content-container {
+  background-color: #333; /* Dark grey background for the contact form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Contact Info Container */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Contact Item */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Styling */
+.contact-item input {
+  background-color: #444; /* Darker grey */
+  color: #ddd;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Label Styling */
+.contact-item label {
+  font-size: 1.2em;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.contact-item input[disabled] {
+  background-color: #222; /* Dark background for disabled input */
+  color: #aaa;
+}
+
+/* Prevent the page from scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent any scrolling */
+}
+
+/* Navbar Styles (Banner Section) */
+nav {
+  background-color: #333;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), 0 -4px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #444, #222);
+  border: 1px solid #555;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo Styling */
+.navbar-logo img {
+  width: 42px;
+  height: auto;
+}
+
+/* Navbar Name */
+.navbar-name {
+  font-size: 20px;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+ul li:hover {
+  background-color: #444;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul li a {
+  padding: 10px 15px;
+  width: 150px;
+}
