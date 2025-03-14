@@ -60,7 +60,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "The first screen upon launching the game.\n\nThe mobile version features the pugs coming from a phone, while the PC version will feature a monitor."
+      description: "The first screen upon launching the game."
     },
     pgame2: {
 	  src: "pgame1.png",
@@ -69,7 +69,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "Complex real-time battle system with an AI that adapts its moves based on the pace of battle.\nOpponents come in waves and increase in difficulty.\n\nPlayers can upgrade attacks for more damage / healing, and use 'Hacks' to change gameplay styles."
+      description: "Real-time battle system with an AI that adapts its moves based on the pace of battle.\nOpponents come in waves + increase in difficulty.\nPlayers can upgrade attacks for more damage / healing."
     },
     pgame3: {
 	  src: "pgame2.png",
@@ -78,7 +78,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "Unlockable gameplay modifiers 'Hacks' that orbit the player during battle.\n\nThese can benefit the player, harm, or both.\n Ex. Do less attack damage, but earn more money."
+      description: "Unlockable gameplay modifiers, called 'Hacks', that visually orbit the player during battle.\nCan benefit the player, or challenge them."
     },
     pgame4: {
 	  src: "pgame3.png",
@@ -87,7 +87,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "Equip items by clicking or tapping on the icon in your inventory.\n\nSort cosmetics by type (head, face, body, paw, tail) by clicking on the respective icon.\n\nCosmetics are dynamically placed in the order of acquisition."
+      description: "Equip items by clicking or tapping on the icon in your inventory.\nSort cosmetics by type (head, face, body, paw, tail) by clicking on the respective icon."
     },
     pgame5: {
 	  src: "pgame4.png",
@@ -96,7 +96,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "Cycle through hub worlds in the menu. Also displays the current amount of money owned by the player.\n\nClick or tap on the place you want to go. Revolves in a circular fashion."
+      description: "Cycle through hub worlds in the menu. Also displays the current amount of money owned by the player."
     },
     pgame6: {
       src: "pgame5.png",
@@ -105,7 +105,7 @@ function openModal(imageId) {
       year: "2021-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL, Mobile",
-      description: "Programmed shop, shopkeeper, televisions which display items & prices.\n\nPart of the larger shop, where players use in-game currency they earn to buy cosmetics for their pug.\n\nI designed, modeled, textured, and animated the art assets."
+      description: "Programmed shop, shopkeeper, televisions which display items & prices.\nPart of the larger shop, where players use in-game currency they earn to buy cosmetics."
     },
     // Placeholder for the rest after the 6th one
     pgame7: {
@@ -115,7 +115,7 @@ function openModal(imageId) {
       year: "2023-2025",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC",
-      description: "Conceptualized, designed, modeled game environment for use in an upcoming puzzle game involving cymatics.\n\nPlayer must navigate a colored checkered cube to its associated portal to unlock the next section of the level. Players can break obstacle flower pots into shards."
+      description: "Conceptualized, designed, modeled game environment for use in an upcoming puzzle game involving cymatics.\nPlayer must navigate a colored checkered cube to its associated portal to unlock the next section of the level."
     },
     pgame8: {
       src: "pgame8.png", // Placeholder image
@@ -124,7 +124,7 @@ function openModal(imageId) {
       year: "2023-2025",
       tools: "Unity C#, Autodesk Maya, Paint.NET",
       platform: "PC",
-      description: "Conceptualized, designed, modeled, textured & animated game character for use in an upcoming puzzle game involving cymatics and using tuning forks as a tool for level interaction.\n\nAnimations include: emotions (crying, cheering), fire breathing, crouching, swinging weapons, etc."
+      description: "Conceptualized, designed, modeled, textured & animated game character for use in an upcoming puzzle game involving cymatics and using tuning forks as a tool for level interaction."
     },
     pgame9: {
       src: "gunTech_gameplay2.gif", // Placeholder image
@@ -133,7 +133,7 @@ function openModal(imageId) {
       year: "2022",
       tools: "Unity C#, Autodesk Maya / 3ds Max, Visual Studio, Audacity, Paint.NET, Sony VEGAS",
       platform: "Oculus / Meta VR",
-      description: "Group project for CSC 475 - Topics in Computer Science.\n\nI was responsible for game design, programming, scene construction, sound design, UI graphics. Developed lock-on system for shooting multiple targets at once."
+      description: "I was responsible for game design, programming, scene construction, sound design, UI graphics. Developed lock-on system for shooting multiple targets at once."
     },
     pgame10: {
       src: "pgame11.png", // Placeholder image
@@ -151,7 +151,7 @@ function openModal(imageId) {
       year: "2021",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC",
-      description: "Modeled & animated assets for use in first-person horror project.\n\nProgrammed system where player can collect, pick up, inspect, or throw props around the level with the goal of moving all the furniture to a moving truck within a time limit."
+      description: "Modeled & animated assets for use in first-person horror project.\nProgrammed system where player can collect, pick up, inspect, or throw props around the level."
     },
     pgame12: {
       src: "pgame10.png", // Placeholder image
@@ -160,7 +160,7 @@ function openModal(imageId) {
       year: "2021",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC",
-      description: "Conceptualized, designed, modeled, textured & animated demon creature & environment for use in a horror game project.\n\nPlayer is forced to play a matching game, each wrong move makes the demon pull the lever, lowering the axe."
+      description: "Conceptualized, designed, modeled, textured & animated demon creature & environment for use in a horror game project.\nPart of matching game, each wrong move makes the demon pull the lever, lowering the axe."
     },
     pgame13: {
       src: "pgame12.png", // Placeholder image
@@ -169,7 +169,7 @@ function openModal(imageId) {
       year: "2020",
       tools: "Autodesk Maya, Paint.NET, Unity C#, Visual Studio",
       platform: "PC",
-      description: "Worked with concept artist on team of freelancers to translate 2D artwork to 3D game asset.\n\nModeled, textured & animated plush bear based on existing artwork for use in unreleased horror game project."
+      description: "Worked with concept artist on team of freelancers to translate 2D artwork to 3D game asset.\nModeled, textured & animated plush bear based on orthographic artwork."
     },
     pgame14: {
       src: "pgame13.png", // Placeholder image
@@ -178,7 +178,7 @@ function openModal(imageId) {
       year: "2020",
       tools: "Autodesk Maya, Audacity, Paint.NET, Sony VEGAS",
       platform: "PC",
-      description: "Final project for CSC 320 - Computer Animation.\n\nI was responsible for designing, storyboarding, modeling, texturing & animating characters, props & environment for an animation involving a lab which experiments on turning food sentient."
+      description: "I was responsible for designing, storyboarding, modeling, texturing & animating characters, props & environment for an animation involving a lab which experiments on turning food sentient."
     },
 	pgame15: {
       src: "pizzatron_gameplay.gif", // Placeholder image
@@ -187,7 +187,7 @@ function openModal(imageId) {
       year: "2019",
       tools: "Unity C#, Autodesk Maya, Visual Studio, Audacity, Paint.NET",
       platform: "PC, WebGL",
-      description: "One of the minigames I developed for an online multiplayer fan project called 'Club Penguin 3D'.\n\nI was responsible for all programming, design, and animations. The team was responsible for the majority of the art assets."
+      description: "Minigame developed for an online multiplayer fan project called 'Club Penguin 3D'.\nI was responsible for all programming, design, and animations. The team was responsible for the majority of the art assets."
     },
   };
 

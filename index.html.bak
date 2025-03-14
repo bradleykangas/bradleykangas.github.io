@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="navbar-container">
+    <!-- My Name -->
+    <div class="navbar-name">Bradley Kangas</div>
+
+    <!-- Logo spot -->
+    <div class="navbar-logo">
+      <!-- Logo image, replace with your logo -->
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+  
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="xPug.html">Games</a>
+        <ul>
+          <li><a href="xPug.html">xPug (Mobile)</a></li>
+          <li><a href="Esotaria.html">Esotaria (PC)</a></li>
+          <li><a href="GunTech.html">Gun Tech (VR)</a></li>
+          <li><a href="BeforeWeWake.html">Before We Wake (PC)</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="AppleLab.html">3D</a>
+        <ul>
+          <li><a href="AppleLab.html">Apple Lab (2020)</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li> <!-- Make sure this link is active on the contact page -->
+    </ul>
+
+    <!-- Animated typing text -->
+    <div class="typing-container">
+      <span id="typing-text"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Video Section -->
+<section class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="Portfolio_Reel.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  
+  <!-- Left Box -->
+  <div class="left-box"></div>
+
+  <!-- Right Box -->
+  <div class="right-box"></div>
+</section>
+
+<!-- Main Content -->
+<div class="content">
+  <img src="unity_logo.png" alt="Unity Logo" class="logo-left">
+  <h1>Game Development Portfolio</h1>
+  <img src="c_logo.png" alt="C Logo" class="logo-right">
+</div>
+
+<section class="about-me">
+  <div class="about-container">
+    
+    <!-- Background Container with Darker Rounded Rectangle -->
+    <div class="background-container">
+    
+      <!-- Left Content: Text -->
+      <div class="about-text">
+		
+		<p><br></p>
+		<p>Hi! I am Bradley Kangas, a game developer with over <b>10 years of experience</b> creating games using Unity and C#.</p>
+
+        <p>In addition to programming, my skills include Autodesk Maya for modeling & animation. My focus is games programming, modeling, and design.<br><br>This portfolio shows my work 2019 - present. I am responsible for all art assets (unless otherwise stated) in addition to programming & game design. Watch my demo reel above, click the tabs, or click on any image below to view more details.</p>
+
+        <h3>Skillset</h3>
+        <div class="skillset-bullets">
+          <div class="skill">C#</div>
+          <div class="skill">Python</div>
+          <div class="skill">Java</div>
+		  <div class="skill">Functional Programming Languages</div>
+		  <div class="skill">Game Development (PC / Mobile / VR)</div>
+		  <div class="skill">Game, Level & Character Design</div>
+		  <div class="skill">3D Modeling, Texturing & Animation</div>
+        </div>
+
+        <!-- Software Header and Skills -->
+        <h3>Software</h3>
+        <div class="software-skills">
+          <div class="skill">Unity</div>
+          <div class="skill">Autodesk Maya</div>
+          <div class="skill">Blender</div>
+          <div class="skill">Audacity</div>
+          <div class="skill">Paint.NET</div>
+          <div class="skill">Adobe Suite</div>
+		  <div class="skill">GitHub</div>
+		  <div class="skill">Unity Collaborate</div>
+        </div>
+		
+		<h3>Courses</h3>
+        <div class="courses">
+          <div class="skill">Discrete Math Structures</div>
+          <div class="skill">Data Structures</div>
+          <div class="skill">Object-Oriented Prog & Design</div>
+          <div class="skill">Computer Networks</div>
+          <div class="skill">Formal Languages</div>
+          <div class="skill">Design & Analysis of Algorithm</div>
+		  <div class="skill">Programming Languages</div>
+		  <div class="skill">Web Page Development</div>
+		  <div class="skill">3D Computer Graphics</div>
+		  <div class="skill">Computer Animation</div>
+        </div>
+      </div>
+	
+      <!-- Right Content: Profile Picture -->
+      <div class="about-image">
+        <img src="your-photo.png" alt="Bradley Kangas" class="profile-img">
+      </div>
+
+    </div> <!-- End of background-container -->
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- Thin Black Line (iPhone 3D Style) -->
+<div class="black-bar"></div>
+
+<!-- Image Grid Section -->
+<section class="image-grid">
+  <div class="grid-container">
+    <!-- Existing images -->
+    <div class="grid-item" onclick="openModal('pgame1')">
+      <img src="pgame6.png" alt="Image 1" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame2')">
+      <img src="pgame1.png" alt="Image 2" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame3')">
+      <img src="pgame2.png" alt="Image 3" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame4')">
+      <img src="pgame3.png" alt="Image 4" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame5')">
+      <img src="pgame4.png" alt="Image 5" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame6')">
+      <img src="pgame5.png" alt="Image 6" class="grid-img">
+    </div>
+
+    <!-- New placeholder images -->
+    <div class="grid-item" onclick="openModal('pgame7')">
+      <img src="pgame7.png" alt="Image 7" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame8')">
+      <img src="pgame8.png" alt="Image 8" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame9')">
+      <img src="gunTech_gameplay2.gif" alt="Image 9" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame10')">
+      <img src="pgame11.png" alt="Image 11" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame11')">
+      <img src="cryptids_gameplay2.gif" alt="Image 12" class="grid-img">
+    </div>
+	<div class="grid-item" onclick="openModal('pgame12')">
+      <img src="pgame10.png" alt="Image 13" class="grid-img">
+    </div>
+    <div class="grid-item" onclick="openModal('pgame13')">
+      <img src="pgame12.png" alt="Image 14" class="grid-img">
+    </div>
+	<div class="grid-item" onclick="openModal('pgame14')">
+      <img src="pgame13.png" alt="Image 15" class="grid-img">
+    </div>
+	<div class="grid-item" onclick="openModal('pgame15')">
+      <img src="pizzatron_gameplay.gif" alt="Image 16" class="grid-img">
+    </div>
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="image-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-image-container">
+      <img id="modal-image" class="modal-img" src="" alt="">
+    </div>
+    
+    <!-- Middle Caption Title -->
+    <div class="modal-caption">
+      <h2 id="modal-caption"></h2>
+    </div>
+    
+    <!-- Title and Year, Tools, Platform, Description -->
+    <div class="modal-description">
+      <p><strong>Title & year:</strong> <span id="modal-title-year"></span></p> <!-- In-line -->
+      <p><strong>Tools used:</strong> <span id="modal-tools"></span></p>
+      <p><strong>Platform:</strong> <span id="modal-platform"></span></p>
+      <p><strong>Description:</strong> <span id="modal-description"></span></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
