@@ -172,6 +172,15 @@ function openModal(imageId) {
       description: "Worked with concept artist on team of freelancers to translate 2D artwork to 3D game asset.\nModeled, textured & animated plush bear based on orthographic artwork."
     },
     pgame14: {
+      src: "pgame12_alt.png", // Placeholder image
+      caption: "Character Modeling - Plush Bear Alts.",
+      title: "Before We Wake - Black Fox Games ",
+      year: "2020",
+      tools: "Autodesk Maya, Paint.NET, Adobe Suite",
+      platform: "PC",
+      description: "Textured & modified materials for plush bear based on concept artwork of various colorful designs."
+    },
+    pgame15: {
       src: "pgame13.png", // Placeholder image
       caption: "Modeling & Design - Mutant Apple Lab",
       title: "David Dees Inspired Animation",
@@ -180,7 +189,7 @@ function openModal(imageId) {
       platform: "PC",
       description: "I was responsible for designing, storyboarding, modeling, texturing & animating characters, props & environment for an animation involving a lab which experiments on turning food sentient."
     },
-	pgame15: {
+	pgame16: {
       src: "pizzatron_gameplay.gif", // Placeholder image
       caption: "Programming & Design - Minigame",
       title: "Club Penguin 3D 'Pizzatron 3000'",

@@ -4,29 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Before We Wake Game</title>
-  <!-- Link to the general stylesheet for the site -->
   <link rel="stylesheet" href="style.css">
-  <!-- Link to the page-specific stylesheet for xPug.html -->
   <link rel="stylesheet" href="BeforeWeWake.css">
+  <style>
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-top: 30px;
+      position: relative;
+      width: 100%;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 645px; /* Set height to 645px */
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slider-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensure the image fits within the container */
+    }
+
+    .slider-line {
+      position: absolute;
+      top: 0;
+      left: 80%;
+      width: 4px;
+      height: 100%;
+      background-color: white;
+      cursor: ew-resize;
+      z-index: 9; /* Set z-index to 9 */
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+    }
+
+    .centered-video {
+      max-width: 560px;
+      margin: 10px;
+    }
+
+    .content-container {
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav>
   <div class="navbar-container">
-    <!-- My Name -->
     <div class="navbar-name">Bradley Kangas</div>
-
-    <!-- Logo spot -->
     <div class="navbar-logo">
-      <!-- Logo image, replace with your logo -->
       <img src="logo.png" alt="Logo" class="logo">
     </div>
-
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="xPug.html">Games</a>
+      <li><a href="xPug.html">Games</a>
         <ul>
           <li><a href="xPug.html">xPug (Mobile)</a></li>
           <li><a href="Esotaria.html">Esotaria (PC)</a></li>
@@ -34,43 +79,63 @@
           <li><a href="BeforeWeWake.html">Before We Wake (PC)</a></li>
         </ul>
       </li>
-      <li>
-        <a href="AppleLab.html">3D</a>
+      <li><a href="AppleLab.html">3D</a>
         <ul>
           <li><a href="AppleLab.html">Apple Lab (2020)</a></li>
         </ul>
       </li>
-      <li><a href="contact.html" class="active">Contact</a></li> <!-- Make sure this link is active on the contact page -->
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-
-    <!-- Animated typing text -->
     <div class="typing-container">
       <span id="typing-text"></span>
     </div>
   </div>
 </nav>
+<div class="content-container">
+	<!-- Image Section with Slider -->
+	<div class="slider-container">
+	  <!-- Left Image (bear_concept2.png) -->
+	  <img src="bear_concept2.png" alt="Bear Concept 2" class="slider-image" id="left-image">
 
-<!-- Video Section with Background Container -->
-<div class="content-container video-container">
-  <div class="centered-video">
-    <!-- Replace VIDEO_URL with your YouTube embed link -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XVO7oCg3CqU" allowfullscreen></iframe>
-  </div>
-  <div class="centered-video">
-    <!-- Replace VIDEO_URL with your YouTube embed link -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HgokcRhBoVQ" allowfullscreen></iframe>
+	  <!-- Right Image (bear_concept3.png) -->
+	  <div class="slider-mask">
+		<img src="bear_concept3.png" alt="Bear Concept 3" class="slider-image" id="right-image">
+	  </div>
+
+	  <!-- The slider line -->
+	  <div class="slider-line" id="slider"></div>
+
+	  <!-- Arrow inside the slider area -->
+	  <div class="slider-arrow" id="slider-arrow">&#8592;</div>
+	</div>
+  <div class="centered-paragraph">
+    <p><i>(Drag the slider above)</i></p>
   </div>
 </div>
+
 
 <!-- Title and Centered Paragraph Section -->
 <div class="content-container">
   <div class="title"><i>Before We Wake</i> (2020):</div>
   <div class="centered-paragraph">
-    <p>Before We Wake is an unreleased project by Black Fox Games. I was the 3D<br>modeler/animator for the project. My primary task was working with the project's 2D<br>artist to translate the 2D orthographic drawings of the bear to a game-ready 3D model.<br><br>I was also responsible for game design (weapon/upgrades system), programming,<br>scene construction, UI graphics. We had frequent meetings discussing game design.<br><br></p>
+    <p>Before We Wake is an unreleased project by Black Fox Games. I was a freelance<br>3D modeler/animator for the project. My primary task was working with the project's 2D<br>artist to translate the 2D orthographic drawings of the bear to a game-ready 3D model.<br><br>I was also responsible for game design (weapon/upgrades system), programming,<br>scene construction, UI graphics. My team had frequent meetings discussing game design.</p>
   </div>
 </div>
 
-<div class ="content-container">
+<!-- Video Section with Background Container -->
+<div class="content-container video-container">
+  <div class="centered-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XVO7oCg3CqU" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- Video Section with Background Container -->
+<div class="content-container video-container">
+  <div class="centered-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HgokcRhBoVQ" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="content-container">
   <div class="smalltitle">Development Role:</div>
   <div class="centered-paragraph">
     <p>Game Design, Programming, Art / 3D Assets, UI</p>
@@ -122,9 +187,96 @@
         <img src="bear_concept2.png" alt="Image 7">
       </a>
     </div>
+    <div class="gallery-item">
+      <a href="bear_concept3.png" target="_blank">
+        <img src="bear_concept3.png" alt="Image 8">
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="bear_look.gif" target="_blank">
+        <img src="bear_look.gif" alt="Image 9">
+      </a>
+    </div>
   </div>
 </div>
 
+<!-- JavaScript for the Slider -->
+<script>
+const slider = document.getElementById('slider');
+const rightImage = document.getElementById('right-image');
+const leftImage = document.getElementById('left-image');
+const arrow = document.getElementById('slider-arrow'); // Arrow element
+let isDragging = false;
+let lastPosition = 80; // Initial position of the slider at 80%
+
+// Start dragging
+slider.addEventListener('mousedown', function(e) {
+  isDragging = true;
+  document.body.style.userSelect = 'none'; // Disable text selection while dragging
+});
+
+// Stop dragging
+document.addEventListener('mouseup', function() {
+  isDragging = false;
+  document.body.style.userSelect = 'auto'; // Enable text selection again
+});
+
+// Handle dragging
+document.addEventListener('mousemove', function(e) {
+  if (isDragging) {
+    const container = slider.parentElement;
+    const containerWidth = container.offsetWidth;
+
+    // Get the new position of the slider within the container's width
+    let newLeft = e.clientX - container.offsetLeft;
+
+    // Ensure the slider stays within bounds (no left beyond 5% and no right beyond 95%)
+    newLeft = Math.max(containerWidth * 0.05, Math.min(newLeft, containerWidth * 0.95)); // The slider can't go beyond 5% or 95% of the container
+
+    // Calculate the percentage of the slider's position
+    const percentage = (newLeft / containerWidth) * 100;
+
+    // Apply the clip effect on the right image to mask it based on the slider's position
+    rightImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`; // Adjust the right image clipping
+
+    // Move the slider to the new position
+    slider.style.left = `${percentage}%`;
+
+    // Update the arrow direction
+    if (percentage > lastPosition) {
+      arrow.innerHTML = '&#8594;'; // Right arrow
+    } else if (percentage < lastPosition) {
+      arrow.innerHTML = '&#8592;'; // Left arrow
+    }
+    lastPosition = percentage; // Update last position for next comparison
+  }
+});
+
+// Initialize the slider on page load
+window.addEventListener('load', function() {
+  const container = slider.parentElement;
+  const containerWidth = container.offsetWidth;
+
+  // Set the initial slider position (for example, at 80% to start)
+  let initialPosition = containerWidth * 0.80; // Start at 80%
+
+  // Ensure it's within bounds (no left beyond 5% and no right beyond 95%)
+  initialPosition = Math.max(containerWidth * 0.05, Math.min(initialPosition, containerWidth * 0.95));
+
+  // Calculate the percentage of the initial position
+  const initialPercentage = (initialPosition / containerWidth) * 100;
+
+  // Apply the initial clip-path on the right image
+  rightImage.style.clipPath = `inset(0 ${100 - initialPercentage}% 0 0)`; // Set the right image clipping
+
+  // Set the initial position of the slider
+  slider.style.left = `${initialPercentage}%`;
+
+  // Update the arrow direction (since we're starting at 80%, we set it accordingly)
+  arrow.innerHTML = '&#8592;'; // Left arrow
+});
+
+</script>
 
 </body>
 </html>
