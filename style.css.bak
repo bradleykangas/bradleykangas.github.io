@@ -1,0 +1,527 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #ddd;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  padding: 20px 20px; /* Increased padding to make the navbar a bit taller */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; /* Ensures the left and right sides are spaced apart */
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), 0 -4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadows for depth */
+  background: linear-gradient(to bottom, #444, #222); /* Gradient with more contrast */
+  border: 1px solid #555; /* Subtle grey wireframe */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between the left and right side */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Logo spot */
+.navbar-logo {
+  margin-left: 10px; /* Space between logo and text */
+}
+
+.navbar-logo img {
+  width: 42px; /* Shrink logo size */
+  height: auto;
+}
+
+/* My Name */
+.navbar-name {
+  font-size: 20px;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto; /* Pushes the navbar links to the right */
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+ul li:hover {
+  background-color: #444;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul li a {
+  padding: 10px 15px;
+  width: 150px;
+}
+
+/* Typing Text */
+.typing-container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  color: #fff;
+  white-space: nowrap;
+  border-right: 3px solid #fff; /* Cursor effect */
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero Video Section */
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  background-color: #111; /* Fallback color */
+  background-image: url('banner-art.png'); /* Replace with your art file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 1.0); /* Stronger shadow behind video */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Video styling with no shadow */
+.hero-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 1.0); /* Strong shadow behind video */
+}
+
+/* Main Content */
+.content {
+  padding: 10px 20px; /* Reduced padding to make it less tall */
+  text-align: center;
+  background-color: #333; /* Grey section background */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.7); /* Add shadow above the content, stronger */
+  position: relative;
+  z-index: 5; /* Ensure content appears above the background */
+  background: linear-gradient(to top, #222, #444); /* Gradient effect for depth */
+  border: 1px solid #555; /* Subtle grey wireframe */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  gap: 15px; /* Space between logos and text */
+}
+
+.logo-left, .logo-right {
+  width: 40px; /* Adjust the size of the logos to fit with the text */
+  height: auto;
+}
+
+h1 {
+  font-size: 24px; /* Ensure the font size is consistent with logo size */
+  color: #ddd;
+  margin: 0; /* Remove default margin */
+}
+
+
+
+/* Matte Double Lines Above and Below the Video */
+.hero-video::before,
+.hero-video::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Thickness of the matte double lines */
+  background-color: #222; /* Matte black */
+}
+
+.hero-video::before {
+  top: -5px; /* Position the first matte line above the video */
+  box-shadow: 0px 0px 0px 2px #555 inset; /* Subtle inner grey border */
+}
+
+.hero-video::after {
+  bottom: -5px; /* Position the second matte line below the video */
+  box-shadow: 0px 0px 0px 2px #555 inset; /* Subtle inner grey border */
+}
+
+/* About Section */
+.about-me {
+  background-color: #111; /* Darker background */
+  padding: 20px 20px;
+  text-align: left;
+  color: #ddd;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.7); /* Add shadow above the content */
+}
+
+/* Black bar separating the about section from the grid (iPhone 3D Style) */
+.black-bar {
+  background-color: #222;
+  height: 5px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) inset; /* Inner shadow for the bar */
+}
+
+/* Image Grid Section */
+.image-grid {
+  padding: 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Spacing between images */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden; /* Ensures images stay within their container */
+  border: 2px solid #555; /* Thin border around each image */
+  cursor: pointer;
+}
+
+/* Add overlay effect on hover */
+.grid-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); /* Transparent white overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  object-fit: cover; /* Ensure images fill the box properly */
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.grid-item:hover .grid-img {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.grid-item:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Profile Image */
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #ddd; /* Optional: Border around the image */
+}
+
+
+.about-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+}
+
+/* Ensure the paragraph has some padding for better readability */
+.about-text p {
+  margin-bottom: 10px; /* Add space between paragraphs */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
+.about-text {
+  width:600px;
+}
+
+.about-image {
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-left: 34px;
+}
+
+.profile-img {
+  width: 200px;  /* Fixed square size */
+  height: 200px; /* Keep it square */
+  object-fit: cover;  /* Ensure the image fits well */
+  border-radius: 8px;  /* Optional, to give it a rounded square shape */
+}
+/* Modal Style */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #111;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #444;
+  width: 80%;
+  max-width: 500px; /* Adjust this to make the card bigger or smaller */
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -5px;
+  right: 2px;
+  color: #ddd;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-image-container {
+  height: 50%; /* Image will occupy the top half of the modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border: 2px solid #ddd; /* Optional: Border around the image */
+}
+
+.modal-description h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Modal Description Labels (Title, Tools Used, etc.) */
+.modal-description p {
+  margin: 10px 0; /* Add some margin to separate paragraphs */
+  display: flex; /* Use flex to control alignment */
+  justify-content: flex-start; /* Align both title and content to the left */
+}
+
+.modal-description p strong {
+  display: block; /* Makes the label appear on a new line */
+  font-weight: bold;
+  margin-bottom: 5px; /* Add a bit of space after the label */
+  text-align: left; /* Ensure the title is left-aligned */
+  width: 100%; /* Make sure it takes full width so everything stays aligned */
+}
+
+.modal-description p span {
+  display: block; /* Makes the content appear on a new line below the label */
+  margin-top: 5px; /* Optional: Add some space before the content */
+  text-align: left; /* Align the content to the left */
+  width: 100%; /* Make sure the content spans the full width */
+}
+
+/* Styling for non-skillset experience bullets */
+.about-bullets .experience {
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-bullets .experience::before {
+  content: "•";  /* Bullet for experience items */
+  position: absolute;
+  left: 0;
+  color: #f0a0c2;  /* Change to your preferred color for experience bullets */
+}
+
+.skillset-bullets, .software-skills {
+  margin-top: 10px; /* Ensure space for the skills */
+}
+
+
+
+.skillset-bullets .skill {
+  padding: 8px 15px;
+  background-color: #444;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ddd;
+  border: 1px solid #555;
+  transition: background-color 0.3s ease;
+}
+
+.skillset-bullets .skill:hover {
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
+}
+
+.software-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.software-skills .skill {
+  padding: 8px 15px;
+  background-color: #444;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ddd;
+  border: 1px solid #555;
+  transition: background-color 0.3s ease;
+}
+
+
+.software-skills .skill:hover {
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.courses .skill {
+  padding: 8px 15px;
+  background-color: #444;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ddd;
+  border: 1px solid #555;
+  transition: background-color 0.3s ease;
+}
+
+.courses .skill:hover {
+  background-color: white;  /* White background on hover */
+  color: black;  /* Black text on hover */
+}
+
+.text-blocks {
+  display: flex;
+  flex-direction: column; /* Stack blocks vertically */
+  align-items: center; /* Align blocks in the center horizontally */
+  gap: 10px; /* Add space between each block */
+}
+
+.text-block {
+  display: inline-block; /* Makes the block fit to the size of the text */
+  padding: 10px; /* Adds padding inside the block */
+  border: 2px solid #000; /* Adds a border around each block */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  font-size: 16px; /* Customize text size */
+  background-color: #434343; /* Optional: Add a background color */
+  width: 100%; /* Ensures that the blocks take the full width */
+  max-width: 600px; /* Optional: Limits the width of the blocks */
+}
+
+
+.background-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  background-color: #333;  /* Dark background */
+  color: white;  /* Text color for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%; /* Ensure container takes full width */
+
+}
+
+/* Ensure the default background and text colors are not affected */
+nav ul li a {
+  color: inherit; /* Inherit text color from the parent, no changes to text color */
+  background-color: inherit; /* Keep the background the same */
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for dropdown items */
+nav ul li a:hover {
+  color: black; /* Keep the text color the same as before */
+  background-color: #f0f0f0;
+}
+
+/* Dropdown menu behavior: only change visibility on hover */
+nav ul li:hover > ul {
+  display: block; /* Ensure dropdown items are visible when hovering over the parent */
+}
+
+/* Prevent layout issues when hovering */
+nav ul li > ul {
+  display: none; /* Keep dropdown hidden by default */
+  position: absolute;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Optional: to avoid horizontal overflow or layout shift, ensure this */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar appearance */
+}
+
