@@ -2,34 +2,56 @@
 .contact-section {
   background-color: #222;
   color: #ddd;
-  padding: 20px 20px 40px 20px; /* Adjust padding as needed */
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align to top instead of center */
-  min-height: 100vh;
-  overflow: hidden; /* Prevent scrolling within this section */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
 }
 
-/* General Content Container */
-.content-container {
-  background-color: #333; /* Dark grey background for the contact form */
+/* Flex container for contact info and resume */
+.contact-resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align tops of both boxes */
+  gap: 40px; /* Space between boxes */
+  width: 90%;
+}
+
+/* Contact & Resume Box Styling */
+.content-container, 
+.resume-container {
+  background-color: #333;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures title aligns at the top */
+  height: 100%;
+  min-height: 450px; /* Ensure both containers have the same height */
+}
+
+.content-container {
+  max-height: 0%;
+}
+
+.resume-container {
+  max-height: 70%;
 }
 
 /* Title Styling */
 .title {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
-  margin-bottom: 20px;
   color: #fff;
+  margin-top: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Ensure slight spacing below */
 }
 
-/* Contact Info Container */
+/* Contact Info */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -45,7 +67,7 @@
 
 /* Input Styling */
 .contact-item input {
-  background-color: #444; /* Darker grey */
+  background-color: #444;
   color: #ddd;
   border: 1px solid #555;
   border-radius: 5px;
@@ -62,22 +84,32 @@
   margin-bottom: 5px;
 }
 
+/* Disabled Input */
 .contact-item input[disabled] {
-  background-color: #222; /* Dark background for disabled input */
+  background-color: #222;
   color: #aaa;
+}
+
+/* Resume PDF Styling */
+.resume-embed {
+  width: 100%;
+  height: 350px; /* Adjusted to fit without overflow */
+  border: none;
+  background-color: #222;
+  flex-grow: 1; /* Allows the PDF to take up remaining space */
 }
 
 /* Prevent the page from scrolling */
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent any scrolling */
+  overflow: hidden;
 }
 
-/* Navbar Styles (Banner Section) */
+/* Navbar Styles */
 nav {
   background-color: #333;
-  padding: 20px 20px;
+  padding: 15px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -95,19 +127,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-/* Logo Styling */
-.navbar-logo img {
-  width: 42px;
-  height: auto;
-}
-
-/* Navbar Name */
-.navbar-name {
-  font-size: 20px;
-  color: #ddd;
-  font-weight: bold;
 }
 
 /* Navbar Links */
@@ -134,22 +153,15 @@ ul li:hover {
   background-color: #444;
 }
 
-ul li ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #444;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-resume-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-ul li:hover ul {
-  display: block;
-}
-
-ul li ul li a {
-  padding: 10px 15px;
-  width: 150px;
+  .resume-embed {
+    height: 300px; /* Adjusted for smaller screens */
+  }
 }
